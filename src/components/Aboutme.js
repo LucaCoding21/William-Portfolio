@@ -9,7 +9,7 @@ const AboutMe = () => {
         <div className="text-section">
           <h2 className="about-title">About Me</h2>
           <p>
-            Hi, I’m Luca, a computer science student passionate about building innovative and functional projects. I specialize in full-stack development and creating user-friendly apps that solve real-world problems.
+            Hi, I’m William, a computer science student passionate about building innovative and functional projects. I specialize in full-stack development and creating user-friendly apps that solve real-world problems.
           </p>
           <p>
             I’m always eager to learn and explore new technologies. Whether working on a team or independently, I bring a creative and results-driven approach to every project.
