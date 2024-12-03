@@ -60,5 +60,10 @@
 @media (max-width: 768px) {
   .navigation-bar ul {
     justify-content: center; /* Center items on mobile */
+
+  }
+
+  .navigation-bar{
+    padding: 10px 0;
   }
 }
