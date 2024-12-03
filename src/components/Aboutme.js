@@ -22,11 +22,10 @@ const AboutMe = () => {
               <i class="fab fa-github"></i>
             </a>
           </div>
-          <button className="cta-button">
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none' }}>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none' }}>
+            <button className="cta-button">
               View My Resume
-            </a>
-          </button>
+            </button></a>
         </div>
         <div className="image-section">
           <img src={profilePicture} alt="Your Name" className="profile-picture" />

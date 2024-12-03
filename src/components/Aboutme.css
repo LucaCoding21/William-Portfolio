@@ -42,6 +42,7 @@ p{
 }
 .cta-button:hover{
   background-color: #000000;
+  cursor: pointer;
 }
 .social-links-container{
   display: flex;
