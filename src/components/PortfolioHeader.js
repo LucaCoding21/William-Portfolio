@@ -70,7 +70,7 @@ const PortfolioHeader = () => {
           aria-label="View my work⬇"
           tabIndex="0"
         >
-          View my work⬇
+          View my work ⬇
         </button>
       </div>
     </div>

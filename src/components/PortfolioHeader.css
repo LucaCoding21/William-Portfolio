@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
+body {
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 .portfolio-header {
   position: relative;
   height: 100vh;
   overflow: hidden;
   background-color: #f2f2f2;
   font-family: 'Source Sans Pro', sans-serif;
+  width: 100%; /* Ensure the header does not exceed the viewport width */
 }
 
 .content {
@@ -18,6 +24,8 @@
   height: 100%;
   text-align: center;
   color: black;
+  padding: 0 20px; /* Add padding to prevent content from touching the edges */
+  box-sizing: border-box; /* Include padding in the element's total width */
 }
 
 .content h1 {
@@ -64,4 +72,20 @@
 .view-work-button:focus {
   background-color: #000000;
   transform: scale(1.05);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2em; /* Reduce font size for smaller screens */
+  }
+
+  .content p {
+    font-size: 1.2em; /* Adjust paragraph font size */
+  }
+
+  .view-work-button {
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 1em; /* Adjust button font size */
+  }
 }

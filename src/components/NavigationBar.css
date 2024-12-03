@@ -55,3 +55,10 @@
 .link-button:hover {
   color: #61b1e6;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navigation-bar ul {
+    justify-content: center; /* Center items on mobile */
+  }
+}

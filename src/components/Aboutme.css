@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  padding: 40px 20px;
   background-color: #f2f2f2;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -14,6 +14,7 @@
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .about-content {
@@ -23,11 +24,12 @@
   width: 100%;
   max-width: 1000px;
   margin-bottom: 40px;
-
+  flex-wrap: wrap;
 }
 p{
   font-weight: 400;
   line-height: 1.5;
+  text-align: justify;
 }
 .cta-button {
   background-color: #61b1e6;
@@ -39,14 +41,17 @@ p{
   font-size: 18px;
   font-weight: 600;
   margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 .cta-button:hover{
   background-color: #000000;
   cursor: pointer;
+  transform: scale(1.05);
 }
 .social-links-container{
   display: flex;
   gap: 10px;
+  font-size: 25px;
 }
 a{
   text-decoration: none;
@@ -70,7 +75,7 @@ a{
 .profile-picture {
   max-width: 100%;
   height: auto;
-  border-radius: 0;
+  border-radius: 8px;
 }
 
 .skills-section {
@@ -81,13 +86,14 @@ a{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   margin-top: 40px;
-  border: 1px solid #ddd; /* Add a border for emphasis */
+  border: 1px solid #ddd;
 }
 
 .skills-section h3 {
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
 }
 
 .skills-section ul {
@@ -97,21 +103,6 @@ a{
 
 .skills-section li {
   margin-bottom: 5px;
-}
-
-.social-links-container {
-  display: flex;
-  gap: 10px;
-}
-
-.social-links-container a {
-  color: #61b1e6;
-  font-size: 25px; /* Adjust size as needed */
-  text-decoration: none;
-}
-
-.social-links-container a:hover {
-  color: #000000; /* Change color on hover */
 }
 
 .skills-list {
@@ -172,17 +163,38 @@ a{
 }
 
 .skills-list .fa-leaf {
-  color: #6DB33F; /* Spring Boot color */
+  color: #6DB33F;
 }
 
 .skills-list .fa-cplusplus {
-  color: #00599C; /* C++ color */
+  color: #00599C;
 }
 
 .skills-list .fa-css3-alt {
-  color: #1572B6; /* CSS color */
+  color: #1572B6;
 }
 
 .skills-list .fa-html5 {
-  color: #E34F26; /* HTML color */
+  color: #E34F26;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-section, .image-section {
+    padding: 20px;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+  }
 }
