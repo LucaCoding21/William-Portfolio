@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+.portfolio-header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: black;
+}
+
+.content h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+.content p {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #61b1e6;
+  width: 0;
+  animation: typing 4s steps(30, end) infinite, blink 0.75s step-end infinite;
+}
+
+.highlight {
+  color: #61b1e6;
+}
+
+.view-work-button {
+  background-color: #61b1e6;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.view-work-button:hover,
+.view-work-button:focus {
+  background-color: #000000;
+  transform: scale(1.05);
+}

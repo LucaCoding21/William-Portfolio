@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+.projects-page {
+  padding: 40px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.projects-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Oswald', sans-serif;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 1000px;
+
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.project-image img {
+  width: 500px;
+  border-radius: 8px;
+}
+
+.project-info {
+  flex: 2;
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+  font-family: 'Oswald', sans-serif;
+}
+
+.project-description {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #555;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.project-technologies {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.tech-logo {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.tech-logo i {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.tech-logo .fa-java {
+  color: #007396;
+}
+
+.tech-logo .fa-python {
+  color: #3776AB;
+}
+.tech-logo .fa-fire{
+  color: #FF9900;
+}
+
+.tech-logo .fa-js {
+  color: #F7DF1E;
+}
+
+.tech-logo .fa-react {
+  color: #61DAFB;
+}
+
+.tech-logo .fa-node {
+  color: #339933;
+}
+
+.tech-logo .fa-git {
+  color: #F05032;
+}
+
+.tech-logo .fa-leaf {
+  color: #6DB33F;
+}
+
+.tech-logo .fa-cplusplus {
+  color: #00599C;
+}
+
+.tech-logo .fa-css3-alt {
+  color: #1572B6;
+}
+
+.tech-logo .fa-html5 {
+  color: #E34F26;
+}
+
+.tech-logo .fa-database {
+  color: #336791;
+}
+
+.tech-logo .fa-robot {
+  color: #FF9900;
+}
+
+.tech-logo .fa-spotify {
+  color: #1DB954;
+}
+
+.tech-logo .fa-camera {
+  color: #FF5722;
+}
+
+.tech-logo .fa-image {
+  color: #4CAF50;
+}
+
+.tech-bubble, .project-link-bubble {
+  display: inline-block;
+  background-color: #61b1e6;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.tech-bubble:hover, .project-link-bubble:hover {
+  background-color: #4a90d6;
+}
+
+.project-link-bubble {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #61b1e6;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+.project-link-bubble:hover {
+  background-color: #000000;
+}
+
+.project-link {
+  font-size: 16px;
+  color: #61b1e6;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.project-type {
+  font-size: 14px;
+  font-weight: normal;
+  color: #61b1e6;
+  margin-bottom: 10px;
+}
