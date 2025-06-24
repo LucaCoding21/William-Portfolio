@@ -196,6 +196,18 @@
   background-color: #000000;
 }
 
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.project-buttons .project-link-bubble {
+  position: static;
+  margin-top: 0;
+}
+
 .project-link {
   font-size: 16px;
   color: #61b1e6;

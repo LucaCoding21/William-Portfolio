@@ -113,9 +113,14 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-              <a href={project.link} className="project-link-bubble" target="_blank" rel="noopener noreferrer">
-                View Project
-              </a>
+              <div className="project-buttons">
+                <a href={project.link} className="project-link-bubble" target="_blank" rel="noopener noreferrer">
+                  View Project
+                </a>
+                <a href="/paper.pdf" className="project-link-bubble" target="_blank" rel="noopener noreferrer">
+                  View Paper
+                </a>
+              </div>
             </div>
           </div>
         ))}
