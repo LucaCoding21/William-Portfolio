@@ -117,9 +117,11 @@ const Projects = () => {
                 <a href={project.link} className="project-link-bubble" target="_blank" rel="noopener noreferrer">
                   View Project
                 </a>
-                <a href="/paper.pdf" className="project-link-bubble" target="_blank" rel="noopener noreferrer">
-                  View Paper
-                </a>
+                {project.title === 'Medical Vision QA' && (
+                  <a href="/paper.pdf" className="project-link-bubble" target="_blank" rel="noopener noreferrer">
+                    View Paper
+                  </a>
+                )}
               </div>
             </div>
           </div>
