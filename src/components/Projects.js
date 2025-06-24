@@ -4,7 +4,42 @@ import guitarTabs from './pictures/guitar.jpg';
 import soulSearching from './pictures/SSUI.jpeg';
 import healthAce from './pictures/healthace.jpg';
 import matchMySpeed from './pictures/match.jpg';
+import medicalVision from './pictures/pov.png';
+import chalkedUp from './pictures/ChalkedUp.png';
 const projects = [
+  {
+    title: 'Medical Vision QA',
+    description: `
+      Built a full-stack Visual Question Answering (VQA) system that adapts large-scale vision-language models (CLIP, ViLT, BLIP) to answer clinically relevant questions from real-world trauma surgery videos. Developed custom data pipelines, prompt engineering strategies, and fine-tuned models to significantly boost accuracy, laying the groundwork for real-time AI support in medical environments.
+    `,
+    technologies: ['Python', 'PyTorch', 'Hugging Face'],
+    link: 'https://github.com/sfu-cmpt419/2025_1_project_16', // Placeholder for your link
+    image: medicalVision, // Placeholder for your image
+    type: 'Group Project',
+  },
+
+  {
+    title: 'ChalkedUp',
+    description: `
+      A mobile-friendly social media app for climbers built with React and Firebase, featuring real-time chat, video uploads, friend requests, and Instagram-style photo interactions. Designed and implemented responsive UI/UX, integrated Firebase Authentication and Firestore for scalable backend, and enabled live messaging and media sharing to support a growing climbing community.
+    `,
+    technologies: ['React', 'Firebase', 'CSS'],
+    link: 'https://chalkedup.netlify.app/', // Placeholder for your link
+    image: chalkedUp, // Placeholder for your image
+    type: 'Personal Project',
+  },
+
+  {
+    title: 'HealthAce',
+    description: `
+      Developed a full-stack hospital appointment portal using Spring Boot and PostgreSQL, featuring an AI-driven chatbot for enhanced patient engagement.
+    `,
+    technologies: ['Spring Boot', 'Java', 'PostgreSQL', 'OpenAI API','Git'],
+    link: 'https://github.com/thanhha1210/cmpt276-group-project',
+    image: healthAce,
+    type: 'Group Project',
+  },
+
   {
     title: 'SoulSearching',
     description: `
@@ -16,16 +51,6 @@ const projects = [
     type:'Personal Project',
   },
   
-  {
-    title: 'HealthAce',
-    description: `
-      Developed a full-stack hospital appointment portal using Spring Boot and PostgreSQL, featuring an AI-driven chatbot for enhanced patient engagement.
-    `,
-    technologies: ['Spring Boot', 'Java', 'PostgreSQL', 'OpenAI API','Git'],
-    link: 'https://github.com/thanhha1210/cmpt276-group-project',
-    image: healthAce,
-    type: 'Group Project',
-  },
   {
     title: 'Match My Speed',
     description: `
@@ -83,6 +108,8 @@ const Projects = () => {
                     {tech === 'OpenCV' && <><i className="fas fa-camera"></i> OpenCV</>}
                     {tech === 'SSIM' && <><i className="fas fa-image"></i> SSIM</>}
                     {tech === 'Firebase' && <><i className="fas fa-fire"></i> Firebase</>}
+                    {tech === 'PyTorch' && <><i className="fas fa-brain"></i> PyTorch</>}
+                    {tech === 'Hugging Face' && <><i className="fas fa-robot"></i> Hugging Face</>}
                   </span>
                 ))}
               </div>
