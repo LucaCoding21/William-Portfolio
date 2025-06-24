@@ -1,11 +1,13 @@
 .navigation-bar {
   position: sticky;
   top: 0;
-  background-color: #1a1a1a;
-  padding: 20px 0;
+  background-color: rgba(26, 26, 26, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 15px 0;
   text-align: center;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navigation-bar ul {
@@ -13,30 +15,39 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 5px;
 }
 
 .navigation-bar li {
-  margin: 0 20px;
+  margin: 0;
 }
 
 .navigation-bar a {
   color: white;
   text-decoration: none;
-  font-size: 1.2em;
-  font-weight: bold;
-  transition: color 0.3s, transform 0.3s;
+  font-size: 0.95em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
 }
 
 .navigation-bar a:hover {
-  color: #61b1e6; /* Highlight color */
-  transform: scale(1.1);
+  color: #61b1e6;
+  background-color: rgba(97, 177, 230, 0.1);
+  transform: translateY(-1px);
 }
 
 .navigation-bar a:active {
-  color: #61b1e6; /* Highlight color */
+  color: #61b1e6;
+  transform: translateY(0);
 }
 
 .link-button {
@@ -45,25 +56,64 @@
   color: inherit;
   cursor: pointer;
   font: inherit;
-  padding: 0;
+  padding: 8px 16px;
   color: white;
-  font-size: 1.2em;
-  font-weight: bold;
-  transition: color 0.3s, transform 0.3s;
+  font-size: 0.95em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
 }
 
 .link-button:hover {
   color: #61b1e6;
+  background-color: rgba(97, 177, 230, 0.1);
+  transform: translateY(-1px);
+}
+
+.link-button:active {
+  color: #61b1e6;
+  transform: translateY(0);
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-  .navigation-bar ul {
-    justify-content: center; /* Center items on mobile */
-
+  .navigation-bar {
+    padding: 12px 0;
   }
 
-  .navigation-bar{
+  .navigation-bar ul {
+    justify-content: center;
+    gap: 3px;
+    padding: 0 10px;
+    flex-wrap: wrap;
+  }
+
+  .navigation-bar a,
+  .link-button {
+    font-size: 0.85em;
+    padding: 6px 12px;
+    border-radius: 15px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation-bar {
     padding: 10px 0;
+  }
+
+  .navigation-bar ul {
+    gap: 2px;
+    padding: 0 8px;
+  }
+
+  .navigation-bar a,
+  .link-button {
+    font-size: 0.8em;
+    padding: 5px 10px;
+    border-radius: 12px;
   }
 }

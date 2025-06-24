@@ -10,15 +10,16 @@ function App() {
     <div className="App">
       <PortfolioHeader />
       <NavigationBar />
+      <div id="about">
+        <AboutMe />
+      </div>
       <div id="projects">
         <Projects />
       </div>
       <div id="experience">
         <Experience />
       </div>
-      <div id="about">
-        <AboutMe />
-      </div>
+      
       
     </div>
   );
